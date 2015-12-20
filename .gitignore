@@ -2,3 +2,5 @@
 /build.xml
 /build/
 /web/node_modules/
+/dist/
+/jsbuild/node_modules/

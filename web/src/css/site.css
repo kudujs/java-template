@@ -1,20 +1,4 @@
-@import url("bootstrap.css");
-@import url("font-awesome.css");
-@import url("toastr.css");
-@import url("fullcalendar.css");
-@import url("validationEngine.jquery.css"); 
-@import url("select2.css");
-@import url("select2-bootstrap.css");
-@import url("home.css");
-@import url("enjoyhint.css");
-@import url("cropper/cropper.css");
-
-@import url("dropzone/basic.css");
-@import url("dropzone/dropzone.css");
-@import url("wysiwyg.css");
-@import url("todo.css");
-@import url("jquery.reject.css");
-@import url("theme/default.css");
+//@import url("home.css");
 
 ul,li {
     margin: 0;
