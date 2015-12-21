@@ -2,18 +2,18 @@ define(function (require) {
 
 	var Ractive = require("ractive");
 	var home = require("app/views/home/home");
-	var customer = require("app/views/customer/customer");
+	var test = require("app/views/test/test");
 	var notFound = require("app/views/notfound/notFound");
 
 	function routes() {
 
-		var homeRoute = {path: '/home',
+		var homeRoute = {path: 'home',
 			ctrl: home
 		};
 
 		var routes = {
 			home: homeRoute,
-			customer: {path: '/customer', ctrl: customer},
+			test: {path: 'test', ctrl: test},
 			notFound: {path: '*', ctrl: notFound}
 		};
 

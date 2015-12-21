@@ -1,9 +1,9 @@
 define(function (require) {
 	var $ = require("jquery");
 	var kudu = require("kudu");
-	var template = require("rvc!./customer");
+	var template = require("rvc!./test");
 
-	function customer() {
+	function test() {
 
 		var that = {};
 
@@ -13,19 +13,14 @@ define(function (require) {
 		};
 
 		function createView() {
+
 			var view = new template({
-				home: function () {
-					var e = this.event;
-					e.original.preventDefault();
-					require(["../home/home"], function (home) {
-						kudu.go({ctrl: home});
-					});
-				}
+
 			});
 			return view;
 		}
 
 		return that;
 	}
-	return customer;
+	return test;
 });

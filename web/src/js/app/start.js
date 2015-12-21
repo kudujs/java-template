@@ -1,17 +1,18 @@
 define(function (require) {
 	var $ = require("jquery");
 	var routes = require("app/config/routes");
-
 	var kudu = require("kudu");
+	var menu = require("./menu/menu");
+
+	menu.init({target: "#menu"});
 
 	kudu.router().addRoute({path: "/moo", moduleId: "one"});
 
 	kudu.init({
 		target: "#container",
 		routes: routes,
-		defaultRoute: routes.home
-				//unknownRouteResolver: null,
-				//fx: true
+		defaultRoute: routes.home,
+				fx: true
 	});
 
 	/*  Below we are manually navigating the menus instead of using the href tag. The advantage of this is clicking on the link will force
