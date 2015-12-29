@@ -8,7 +8,7 @@ requirejs.config({
 
 	"paths": {
 		"app": "../app", // path to our application
-		"kudu": "kudu.0.0.1.min", // uncomment this line and *comment* the *map* section below to use the optimized version
+		//"kudu": "kudu.0.0.1.min", // uncomment this line and *comment* the *map* section below to use the optimized version
 		//"moment": "moment",
 		//"numeral": "numeral",
 		//"bootstrap": '../app/plugins/bootstrap',
@@ -17,6 +17,11 @@ requirejs.config({
 				//'ractive': 'http://cdn.ractivejs.org/edge/ractive',
 				//@,'jquery': 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min'
 	},
+	map: {
+		'*': {
+			'kudu': 'kudulib/src/kudu'
+		}
+	},	
 	
 	"shim": {
 		//'bootstrap': {

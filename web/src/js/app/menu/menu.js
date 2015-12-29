@@ -2,8 +2,9 @@ define(function (require) {
 	
 	var kudu = require("kudu");
 	var menuTemplate = require("rvc!./menu");
+	var home = require("../views/home/home");
 	
-	var $ = require("jquery");
+	//var $ = require("jquery");
 
 	function menu() {
 
@@ -12,9 +13,12 @@ define(function (require) {
 		that.init = function (options) {
 
 			// Create menu view instance
-			new menuTemplate({
-				
+			new menuTemplate({				
 				el: options.target,
+				gotohome: function() {
+					kudu.go({ctrl:home, routeParams: {"a":["b","c"]}});
+					return false;
+				}
 			});
 		};
 

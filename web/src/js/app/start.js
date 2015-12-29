@@ -1,5 +1,5 @@
 define(function (require) {
-	var $ = require("jquery");
+		var $ = require("jquery");
 	var routes = require("app/config/routes");
 	var kudu = require("kudu");
 	var menu = require("./menu/menu");

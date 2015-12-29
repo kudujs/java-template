@@ -1,6 +1,6 @@
 define(function (require) {
 
-	var $ = require("jquery");
+	//var $ = require("jquery");
 
 	function disableDragging() {
 		// Disable dragging of images onto body

@@ -1,5 +1,5 @@
 define(function (require) {
-	var $ = require("jquery");
+	//var $ = require("jquery");
 	var kudu = require("kudu");
 	var template = require("rvc!./test");
 

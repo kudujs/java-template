@@ -24,11 +24,12 @@ app.get("/", function (req, res) {
 
 app.get("/index.jsp", function (req, res) {
 	res.setHeader('Content-Type', 'text/html');
-	res.sendfile("./src/" + req.path);
+	res.sendFile(__dirname + "/src/" + req.path);
 });
 
 app.get("/data", function (req, res) {
-	res.end("{hello: 'worold'");
+	//res.setHeader('Content-Type', 'application/json');
+	res.end('{"hello": "worold"}');
 });
 
 /*
