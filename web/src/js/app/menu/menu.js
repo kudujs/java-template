@@ -1,28 +1,26 @@
 define(function (require) {
-	
-	var kudu = require("kudu");
-	var menuTemplate = require("rvc!./menu");
-	var home = require("../views/home/home");
-	
-	//var $ = require("jquery");
 
-	function menu() {
+    var kudu = require("kudu");
+    var menuTemplate = require("rvc!./menu");
+    var home = require("../views/home/home");
 
-		var that = {};
+    function menu() {
 
-		that.init = function (options) {
+        var that = {};
 
-			// Create menu view instance
-			new menuTemplate({				
-				el: options.target,
-				gotohome: function() {
-					kudu.go({ctrl:home, routeParams: {"a":["b","c"]}});
-					return false;
-				}
-			});
-		};
+        that.init = function (options) {
 
-		return that;
-	}
-	return menu();
+            // Create menu view instance
+            new menuTemplate({
+                el: options.target,
+                gotohome: function () {
+                    kudu.go({ctrl: home, routeParams: {"a": ["b", "c"]}});
+                    return false;
+                }
+            });
+        };
+
+        return that;
+    }
+    return menu();
 });

@@ -1,22 +1,21 @@
 define(function (require) {
-	//var $ = require("jquery");
-	var template = require("rvc!./notFound");
+    var template = require("rvc!./notFound");
 
-	function notFound() {
-		
-		var that = this;
+    function notFound() {
 
-		that.onInit = function (options) {
-			
-			var view = createView();
-			return new view();
-		};
+        var that = this;
 
-		function createView() {
-			return template;
-		}
+        that.onInit = function (options) {
 
-		return that;
-	}
-	return notFound;
+            var view = createView();
+            return new view();
+        };
+
+        function createView() {
+            return template;
+        }
+
+        return that;
+    }
+    return notFound;
 });

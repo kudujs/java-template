@@ -1,26 +1,24 @@
 define(function (require) {
-	//var $ = require("jquery");
-	var kudu = require("kudu");
-	var template = require("rvc!./test");
+    var kudu = require("kudu");
+    var template = require("rvc!./test");
 
-	function test() {
+    function test() {
 
-		var that = {};
+        var that = {};
 
-		that.onInit = function (options) {
-			var view = createView();
-			return view;
-		};
+        that.onInit = function (options) {
+            var view = createView();
+            return view;
+        };
 
-		function createView() {
+        function createView() {
 
-			var view = new template({
+            var view = new template({
+            });
+            return view;
+        }
 
-			});
-			return view;
-		}
-
-		return that;
-	}
-	return test;
+        return that;
+    }
+    return test;
 });
