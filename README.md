@@ -34,4 +34,4 @@ npm install
 node build
 ```
 
-"node build" will also create an optimized version of the examples and copy the output to the folder 'build/web/'.
+"node build" will also create an optimized version of the examples and copy the output to the 'dist' folder.
