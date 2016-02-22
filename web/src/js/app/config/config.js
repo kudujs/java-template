@@ -8,7 +8,7 @@ requirejs.config({
 
 	"paths": {
 		"app": "../app", // path to our application
-		"kudu": "kudu.0.0.4.min",
+		"kudu": "kudu.0.0.5.min",
 		//"moment": "moment",
 		//"numeral": "numeral",
 		//"bootstrap": '../app/plugins/bootstrap',
